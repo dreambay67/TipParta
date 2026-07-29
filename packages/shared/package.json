@@ -1,0 +1,23 @@
+{
+  "name": "@tipparta/shared",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "main": "src/index.ts",
+  "exports": {
+    ".": "./src/index.ts",
+    "./money": "./src/money.ts",
+    "./teams": "./src/teams.ts",
+    "./tickets": "./src/tickets.ts",
+    "./types": "./src/types.ts"
+  },
+  "scripts": {
+    "test": "vitest run --passWithNoTests",
+    "lint": "echo shared lint handled by TypeScript",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "typescript": "latest",
+    "vitest": "latest"
+  }
+}

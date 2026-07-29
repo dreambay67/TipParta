@@ -1,0 +1,42 @@
+# Local secrets
+.env
+.env.*
+!.env.example
+
+# Dependencies and build output
+node_modules/
+.next/
+out/
+apps/web/out/
+dist/
+build/
+functions/node/lib/
+*.tsbuildinfo
+.firebase/
+firebase-debug.log
+firestore-debug.log
+ui-debug.log
+web-dev-*.log
+*.out.log
+*.err.log
+tmp-screen*.png
+test-results/
+apps/web/test-results/
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+
+# Local planning/visual scratch
+.superpowers/brainstorm/
+.worktrees/
+tools/avatar-studio/
+
+# OS/editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

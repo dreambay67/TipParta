@@ -1,0 +1,11 @@
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // The site is dormant. Firebase Auth is retained only to preserve the
+    // administrator identity; no client can read or write tournament data.
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+}

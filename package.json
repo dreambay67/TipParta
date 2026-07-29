@@ -1,0 +1,23 @@
+{
+  "name": "tipparta",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "pnpm --filter @tipparta/web dev",
+    "build": "pnpm --filter @tipparta/web build",
+    "lint": "pnpm --recursive lint",
+    "test": "pnpm --recursive test",
+    "test:python": "python -c \"print('No standalone settlement tests are retained between tournaments.')\"",
+    "typecheck": "pnpm --recursive typecheck",
+    "firebase:emulators": "firebase emulators:start --only auth,firestore,storage",
+    "firebase:deploy": "firebase deploy --only hosting,firestore:rules,storage --project tipparta-ab58e"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.60.0",
+    "playwright": "^1.60.0",
+    "prettier": "^3.8.3",
+    "typescript": "latest",
+    "vitest": "^4.1.8"
+  },
+  "packageManager": "pnpm@11.5.1"
+}
